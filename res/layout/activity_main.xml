@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择监控项目" >
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/test_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/power"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="耗电量" />
+
+        <CheckBox
+            android:id="@+id/traffic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="流量" />
+
+        <CheckBox
+            android:id="@+id/cpu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="cpu" />
+
+        <CheckBox
+            android:id="@+id/memorry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="内存" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/is_float"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="显示悬浮窗(即时生效)" />
+
+    <EditText
+        android:id="@+id/span"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="设置记录的间隔时间（ms）默认3000"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择测试程序" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始测试" >
+    </Button>
+
+    <TextView
+        android:id="@+id/run_inform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="目前没有任务执行" >
+    </TextView>
+
+</LinearLayout>

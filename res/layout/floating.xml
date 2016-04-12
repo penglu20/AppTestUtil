@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/Lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/used_mem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/used_cpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/used_traffic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/used_prower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:orientation="horizontal"
+            android:textSize="12dp" >
+
+            <Button
+                android:id="@+id/record"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/refresh"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/stop_test"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/dismiss"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/dismiss"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
