@@ -1,4 +1,4 @@
-package com.qihoo.testutil.utils;
+package com.pl.testutil.utils;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -11,7 +11,7 @@ import java.util.Date;
 import android.content.Context;
 import android.os.Environment;
 
-import com.qihoo.testutil.R;
+import com.pl.testutil.R;
 
 public class CSVUtil {
 	public static final String NA = "N/A";

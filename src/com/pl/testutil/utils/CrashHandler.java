@@ -1,4 +1,4 @@
-package com.qihoo.testutil.utils;
+package com.pl.testutil.utils;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -20,8 +20,8 @@ import android.content.Context;
 import android.os.Environment;
 import android.text.TextUtils;
 
-import com.qihoo.testutil.QihooApplication;
-import com.qihoo.testutil.R;
+import com.pl.testutil.TestApplication;
+import com.pl.testutil.R;
 
 /**
  * UncaughtException处理类,当程序发生Uncaught异常的时候,有该类来接管程序,并记录发送错误报告.
@@ -162,7 +162,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
         printWriter.close();
         mDeviceCrashInfo.put(STACK_TRACE, result);
         mDeviceCrashInfo.put(STACK_DATE, new SimpleDateFormat("yyyyMMddHHMMss").format(new Date()));
-        String processName = QihooApplication.getInstance().getString(R.string.app_name);
+        String processName = TestApplication.getInstance().getString(R.string.app_name);
         if (TextUtils.isEmpty(processName)) {
             processName = "unknown";
         }
@@ -195,7 +195,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
         printWriter.close();
         mDeviceCrashInfo.put(STACK_TRACE, result);
         mDeviceCrashInfo.put(STACK_DATE, new SimpleDateFormat("yyyyMMddHHmmss").format(new Date()));
-        String processName = QihooApplication.getInstance().getString(R.string.app_name);
+        String processName = TestApplication.getInstance().getString(R.string.app_name);
         if (TextUtils.isEmpty(processName)) {
             processName = "unknown";
         }

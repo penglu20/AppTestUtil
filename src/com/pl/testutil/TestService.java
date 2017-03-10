@@ -1,4 +1,4 @@
-package com.qihoo.testutil;
+package com.pl.testutil;
 
 
 import java.io.IOException;
@@ -34,12 +34,12 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.qihoo.testutil.utils.CPUUtil;
-import com.qihoo.testutil.utils.CSVUtil;
-import com.qihoo.testutil.utils.FloatViewUtil;
-import com.qihoo.testutil.utils.MemUtil;
-import com.qihoo.testutil.utils.PowerUtil;
-import com.qihoo.testutil.utils.TrafficUtil;
+import com.pl.testutil.utils.CPUUtil;
+import com.pl.testutil.utils.CSVUtil;
+import com.pl.testutil.utils.FloatViewUtil;
+import com.pl.testutil.utils.MemUtil;
+import com.pl.testutil.utils.PowerUtil;
+import com.pl.testutil.utils.TrafficUtil;
 
 /**
  * @author penglu
@@ -155,7 +155,7 @@ public class TestService extends Service {
 				public void onClick(View v) {
 //					savingData("");
 					Intent intent =new Intent();
-					intent.setAction("com.qihoo.testutil.broadcast");
+					intent.setAction("com.pl.testutil.broadcast");
 					intent.putExtra("label", "手动记录");
 					sendBroadcast(intent);
 				}
@@ -435,7 +435,7 @@ public class TestService extends Service {
 	private void registBroadcastRcv()
 	{
 		IntentFilter intentFilter =new IntentFilter();
-		intentFilter.addAction("com.qihoo.testutil.broadcast");
+		intentFilter.addAction("com.pl.testutil.broadcast");
 		registerReceiver(mBroadCast, intentFilter);
 	}
 	
@@ -445,7 +445,7 @@ public class TestService extends Service {
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			// TODO 自动生成的方法存根
-			if (intent.getAction().equals("com.qihoo.testutil.broadcast")) {
+			if (intent.getAction().equals("com.pl.testutil.broadcast")) {
 				String tag=intent.getStringExtra("label");
 				savingData(tag);
 			}

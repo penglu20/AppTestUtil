@@ -1,4 +1,4 @@
-package com.qihoo.testutil;
+package com.pl.testutil;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package com.qihoo.testutil;
+package com.pl.testutil;
 
 
 import java.io.IOException;
@@ -25,7 +25,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.qihoo.testutil.TestService.LocalBinder;
+import com.pl.testutil.TestService.LocalBinder;
 
 /*
  * x=longtitude,经度

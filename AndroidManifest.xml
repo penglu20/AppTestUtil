@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.qihoo.testutil"
+    package="com.pl.testutil"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -43,7 +43,7 @@
     <uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
-        android:name="com.qihoo.testutil.QihooApplication"
+        android:name="com.pl.testutil.TestApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name">
@@ -58,11 +58,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.qihoo.testutil.ChooseAppActivity"
+            android:name="com.pl.testutil.ChooseAppActivity"
             android:screenOrientation="portrait" >
         </activity>
 
-        <service android:name="com.qihoo.testutil.TestService" >
+        <service android:name="com.pl.testutil.TestService" >
         </service>
     </application>
 

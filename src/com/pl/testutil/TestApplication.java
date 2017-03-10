@@ -14,31 +14,31 @@
  *  limitations under the License.
  *
  */
-package com.qihoo.testutil;
+package com.pl.testutil;
 
 import android.app.Application;
 import android.view.WindowManager;
 
-import com.qihoo.testutil.utils.CrashHandler;
+import com.pl.testutil.utils.CrashHandler;
 
 /**
  * my application class
  * 
  * @author andrewleo
  */
-public class QihooApplication extends Application {
+public class TestApplication extends Application {
 
-	private static QihooApplication instance;
+	private static TestApplication instance;
 	private WindowManager.LayoutParams wmParams = new WindowManager.LayoutParams();
 
 	public WindowManager.LayoutParams getMywmParams() {
 		return wmParams;
 	}
-	public static QihooApplication getInstance()
+	public static TestApplication getInstance()
 	{
 		return instance;
 	}
-	public QihooApplication() {
+	public TestApplication() {
         super();
         instance = this;
         

@@ -1,4 +1,4 @@
-package com.qihoo.testutil.utils;
+package com.pl.testutil.utils;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.view.WindowManager;
 
-import com.qihoo.testutil.QihooApplication;
+import com.pl.testutil.TestApplication;
 
 public class FloatViewUtil 
 {
@@ -33,7 +33,7 @@ public class FloatViewUtil
 		editor.putInt("float", 1);
 		editor.commit();
 		windowManager = (WindowManager) mContext.getSystemService("window");
-		wmParams = ((QihooApplication)mContext).getMywmParams();
+		wmParams = ((TestApplication)mContext).getMywmParams();
 		wmParams.type = 2002;
 		wmParams.flags |= 8;
 		wmParams.gravity = Gravity.LEFT | Gravity.TOP;

@@ -1,4 +1,4 @@
-package com.qihoo.testutil.utils;
+package com.pl.testutil.utils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
